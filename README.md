@@ -12,3 +12,6 @@ However:
 * add at least an extra node for contracting flexibility
 * make sure each node has enoght eth
 * use contractDVPP.py in the contracting nodes to contract the community to provide flexibility pseudo-randomly
+
+## License
+This project is licensed under the LGPL License - see the [LICENSE](LICENSE) file for details
