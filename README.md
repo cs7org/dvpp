@@ -10,7 +10,7 @@ For a setup on a private chain follow the Quickstart according to https://github
 However:
 * use more nodes (in our case we used 20), sync chain and start node.py in each node 
 * add at least an extra node for contracting flexibility
-* make sure each node has enoght eth
+* make sure each node has enough ETH
 * use contractDVPP.py in the contracting nodes to contract the community to provide flexibility pseudo-randomly
 
 ## License
