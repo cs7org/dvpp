@@ -14,7 +14,10 @@ However:
 * add at least an extra node for contracting flexibility
 * make sure each node has enough ETH
 * use contractDVPP.py in the contracting nodes to contract the community to provide flexibility pseudo-randomly
-* use round-robin.py for round robin minting
+* use round-robin.py for round robin minting with index of node, total number of nodes and path to IPC file, e.g. for first of 20 nodes:
+```
+python3 round-robin.py 0 20 .ethereum/geth.ipc
+```
 * psutil is used for analysis of network traffic and more other vars are logged like balance change 
 
 ## License
