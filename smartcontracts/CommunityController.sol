@@ -30,6 +30,8 @@ contract CommunityController {
     uint32 private BlockCounterNewBlock = 0;
     uint48 PmaxTot = 0; //maximum over grid connection (for internal balancing)
     
+    //events have been removed for easier deployment
+    
     //modifiers
     modifier onlyOwner()
     {
@@ -82,14 +84,14 @@ contract CommunityController {
     }
     
     //constructor
-    constructor() public  //TODO rename to constructor()
+    constructor() public
     {
         owner = msg.sender;
         contractor = nobody;
         //register(); //register owner 
     }
     
-    //DVPP new setPoint //TODO 
+    //DVPP new setPoint
     function contractNewSetPoint(int48 newSetValue, uint32 MaxPrice) external payable onlyNotUnderContract onlyNonregistered onlyOnePerBlock
     {
         require(MaxPrice>=price, "invalid MaxPrice"); // in future require(MaxPrice>=price,'price in contract > MaxPrice');
